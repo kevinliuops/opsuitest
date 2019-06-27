@@ -1,5 +1,6 @@
 {
-  "name": "vue_test",
+  "name": "opsuitest",
+  "author": "kevinliujx <kevinljxljx@gmail.com>",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@kevinljxljx/opsui": "^0.2.8",
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
   },

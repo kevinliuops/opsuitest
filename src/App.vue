@@ -1,17 +1,26 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    
+    <el-breadcrumb separator-class="el-icon-arrow-right">
+      <el-breadcrumb-item :to="{ path: '/' }">homepage</el-breadcrumb-item>
+      <el-breadcrumb-item>promotion management</el-breadcrumb-item>
+      <ops-breadcrumb-nav></ops-breadcrumb-nav>
+      <el-breadcrumb-item>promotion detail</el-breadcrumb-item>
+    </el-breadcrumb>
+
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+   
   }
 }
 </script>
@@ -24,5 +33,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.el-breadcrumb__item{
+  line-height: 40px;
 }
 </style>
